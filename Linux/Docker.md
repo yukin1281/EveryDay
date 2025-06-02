@@ -2,6 +2,8 @@
 
 - [Docker官网](https://www.docker.com/)
 - [Docker hub官网](https://hub.docker.com/)
+- https://docs.docker.net.cn/get-started/
+- https://yeasy.gitbook.io/docker_practice
 
 ## 概念
 
@@ -12,8 +14,6 @@
 ## 术语
 
 - 一个镜像可以对应多个不同的容器
-
-## Docker部署
 
 
 
