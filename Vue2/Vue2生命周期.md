@@ -280,7 +280,31 @@ Vue3 生命周期名字改成了 `onXxx` 钩子（组合式 API），例如：
 - `beforeDestroy` → `onBeforeUnmount`
 - `destroyed` → `onUnmounted`
 
+## 父子组件生命周期
 
+### 创建过程
+
+创建过程主要涉及`beforeCreate`、`created`、`beforeMount`、`mounted`四个钩子函数。
+
+```js
+Parent beforeCreate -> Parent Created -> Parent BeforeMount -> Child BeforeCreate -> Child Created -> Child BeforeMount -> Child Mounted -> Parent Mounted
+```
+
+### 更新过程
+
+更新过程主要涉及`beforeUpdate`、`updated`两个钩子函数，当父子组件有数据传递时才会有生命周期的比较。
+
+```
+Parent BeforeUpdate -> Child BeforeUpdate -> Child Updated -> Parent Updated
+```
+
+### 销毁过程
+
+销毁过程主要涉及`beforeDestroy`、`destroyed`两个钩子函数，本例直接调用`vm.$destroy()`销毁整个实例以达到销毁父子组件的目的。
+
+```
+Parent BeforeDestroy -> Child BeforeDestroy -> Child Destroyed -> Parent Destroyed
+```
 
 ## 参考
 
