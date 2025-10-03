@@ -30,14 +30,18 @@
 
 ## 伪类选择器
 
-| 选择器           | 描述             | 示例                                    |
-| ---------------- | ---------------- | --------------------------------------- |
-| `:hover`         | 鼠标悬停         | `a:hover { color: red; }`               |
-| `:focus`         | 获得焦点         | `input:focus { outline: none; }`        |
-| `:first-child`   | 第一个子元素     | `li:first-child { font-weight: bold; }` |
-| `:last-child`    | 最后一个子元素   | `li:last-child { color: gray; }`        |
-| `:nth-child(n)`  | 第 n 个子元素    | `li:nth-child(2) { color: blue; }`      |
-| `:not(selector)` | 不匹配指定选择器 | `div:not(.active) { display: none; }`   |
+| 选择器           | 描述                               | 示例                                                       |
+| ---------------- | ---------------------------------- | ---------------------------------------------------------- |
+| `:hover`         | 鼠标悬停                           | `a:hover { color: red; }`                                  |
+| `:focus`         | 获得焦点                           | `input:focus { outline: none; }`                           |
+| `:first-child`   | 第一个子元素                       | `li:first-child { font-weight: bold; }`                    |
+| `:last-child`    | 最后一个子元素                     | `li:last-child { color: gray; }`                           |
+| `:nth-child(n)`  | 第 n 个子元素                      | `li:nth-child(2) { color: blue; }`                         |
+| `:not(selector)` | 不匹配指定选择器                   | `div:not(.active) { display: none; }`                      |
+| `:active`        | 元素被激活（通常是点击时）         | `button:active { color: red; }`                            |
+| `:checked`       | 表单元素被选中（checkbox / radio） | `#toggle:checked + label {  color: green;  }`              |
+| `:disabled`      | 表单元素被禁用                     | `.item.locked:disabled { cursor: not-allowed; }`           |
+| `:root`          | 文档的根元素（HTML 标签）          | `:root {  --main-color: #409EFF; /* 定义全局 CSS 变量 */}` |
 
 ## 伪元素选择器
 
