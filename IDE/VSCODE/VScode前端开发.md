@@ -12,6 +12,7 @@
 - Rainbow Brackets
 - JavaScript (ES6) code snippets
 - ESLint
+- One Dark Pro
 
 
 
